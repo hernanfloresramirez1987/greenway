@@ -1,0 +1,1 @@
+import{Ba as p,pa as t,ya as n,za as a}from"./chunk-CA4E524X.js";var r=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=t({type:o,selectors:[["app-error404"]],decls:2,vars:0,template:function(e,i){e&1&&(n(0,"p"),p(1,"error404 works!"),a())},encapsulation:2})};export{r as default};

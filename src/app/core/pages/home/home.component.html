@@ -1,7 +1,12 @@
 <!-- Navbar -->
-<header class="bg-emerald-400 text-white shadow-md">
+<header class="bg-lime-700 text-white shadow-md">
     <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-        <h1 class="text-2xl font-bold animate__animated animate__fadeInLeft">Green Way</h1>
+        <div class="flex items-center space-x-2">
+            <!-- Logo -->
+            <img src="images/banners/3.png" alt="Logo Green Way" class="w-10 h-10" />
+            <!-- Título -->
+            <h1 class="text-2xl font-bold animate__animated animate__fadeInLeft">Green Way</h1>
+        </div>
         <nav class="space-x-6 hidden md:block">
             <a href="#inicio" class="hover:text-green-300">Inicio</a>
             <a href="#servicios" class="hover:text-green-300">Servicios</a>
@@ -9,77 +14,41 @@
             <a href="#contacto" class="hover:text-green-300">Contacto</a>
         </nav>
         <button class="md:hidden">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+      </button>
     </div>
 </header>
 
 <!-- Hero Section -->
 <section id="inicio" class="text-center py-0 bg-gradient-to-b from-green-100 to-green-50">
     <div class="animate__animated animate__fadeInUp">
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="text-center px-0">
-            <!-- <h2 class="text-5xl font-extrabold text-green-800 mb-4 animate__animated animate__fadeInDown">Green Way</h2> -->
-            <!-- <h2 class="text-5xl md:text-7xl font-extrabold mb-6">Recicla. Conecta. Impacta.</h2> -->
-
-            <!-- <p class="text-lg text-green-600 mb-16 animate__animated animate__fadeIn">Conectamos empresas, recicladores y centros de reciclaje para un mundo más verde.</p> -->
-
             <!-- Carouselmd Container -->
             <div class="relative w-full overflow-hidden h-[400px]">
                 <div id="carouselmd" class="flex transition-transform duration-700 ease-in-out">
-
                     <!-- Slide 1 -->
-                    <div class="relative min-w-full flex items-center justify-center bg-green-100 overflow-hidden shadow-xl">
+                    <div class="relative min-w-full flex items-center justify-center overflow-hidden shadow-xl">
                         <img src="images/banners/banner1.png" alt="Empresas" class="absolute inset-0 w-full h-full object-cover opacity-70">
                         <div class="relative p-20 text-center">
                             <h2 class="text-5xl md:text-7xl font-extrabold mb-6">Recicla</h2>
-                            <!--h4 class="text-3xl font-bold mb-3 text-green-800">Conexión de Empresas</h4-->
                             <p class="text-emerald-400 text-xl font-semibold max-w-md mx-auto">Empresas publican residuos disponibles y encuentran socios de reciclaje fácilmente.</p>
                             <p class="text-lg text-green-600 mb-16 animate__animated animate__fadeIn">Conectamos con empresas y centros de reciclaje.</p>
                         </div>
                     </div>
-
                     <!-- Slide 2 -->
-                    <div class="relative min-w-full flex items-center justify-center bg-green-100 overflow-hidden shadow-xl">
+                    <div class="relative min-w-full flex items-center justify-center overflow-hidden shadow-xl">
                         <img src="images/banners/banner2.png" alt="Empresas" class="absolute inset-0 w-full h-full object-cover opacity-70">
                         <div class="relative p-20 text-center">
                             <h2 class="text-5xl md:text-7xl font-extrabold mb-6">Conecta</h2>
-                            <!--h4 class="text-3xl font-bold mb-3 text-green-800">Conexión de Empresas</h4-->
                             <p class="text-emerald-400 text-xl font-semibold max-w-md mx-auto">Empresas publican residuos disponibles y encuentran socios de reciclaje fácilmente.</p>
                             <p class="text-lg text-green-600 mb-16 animate__animated animate__fadeIn">Conectamos recicladores informales.</p>
                         </div>
                     </div>
-
-                    <!-- Slide 3 -->
-                    <div class="relative min-w-full flex flex-col items-center justify-center bg-green-100 overflow-hidden shadow-xl">
-
-                        <img src="images/banners/banner3.png" alt="Empresas" class="absolute inset-0 w-full h-full object-cover opacity-70">
-                        <div class="relative p-20 text-center">
-                            <!-- <h2 class="text-5xl md:text-7xl font-extrabold mb-6">Impacta</h2> -->
-                            <!--h4 class="text-3xl font-bold mb-3 text-green-800">Conexión de Empresas</h4-->
-                            <!-- <p class="text-emerald-400 text-xl font-semibold max-w-md ?nimate__fadeIn">Y conectamos con variedad de servicios ecologicos y capacitaciones.</p> -->
-                        </div>
-                    </div>
-
                 </div>
             </div>
-
-
-
         </div>
         <div class="p-4">
             <a href="#servicios" class="bg-green-600 hover:bg-emerald-400 text-white px-8 py-4 rounded-full text-lg shadow-lg animate-bounce">Explora Green Way</a>
@@ -87,72 +56,59 @@
     </div>
 </section>
 
+<!-- Servicios -->
 <section id="servicios" class="py-24 bg-gradient-to-b from-green-50 via-white to-green-50 relative overflow-hidden">
-    <!-- Fondo de imagen -->
     <div class="absolute inset-0 z-0">
         <img src="images/banners/conexion.png" alt="Fondo Ecológico" class="w-full h-full object-cover opacity-20">
     </div>
-
-    <!-- Contenido Principal -->
-    <div class="relative z-10 max-w-7xl mx-auto text-center px-6">
+    <div class="relative z-10 max-w-9xl mx-auto text-center px-6">
         <h2 class="text-5xl font-extrabold text-green-800 mb-4 animate__animated animate__fadeInDown">Green Way</h2>
-        <p class="text-lg text-green-600 mb-16 animate__animated animate__fadeIn">Conectamos empresas, recicladores y centros de reciclaje para un mundo más verde.</p>
-
-        <!-- Carousel Container -->
+        <p class="text-lg text-green-600 animate__animated animate__fadeIn">Conectamos empresas, recicladores y centros de reciclaje para un mundo más verde.</p>
         <div class="relative w-full overflow-hidden h-[400px]">
             <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
-
                 <!-- Slide 1 -->
                 <div class="min-w-full flex flex-col items-center justify-center bg-opacity-80 rounded-xl p-10 shadow-xl">
                     <img src="images/shared/hojas.png" alt="Empresas" class="w-24 mb-6">
                     <h4 class="text-3xl font-bold mb-3 text-green-800">Conexión de Empresas</h4>
                     <p class="text-emerald-400 max-w-md">Empresas publican residuos disponibles y encuentran socios de reciclaje fácilmente.</p>
                 </div>
-
                 <!-- Slide 2 -->
                 <div class="min-w-full flex flex-col items-center justify-center bg-opacity-80 rounded-xl p-10 shadow-xl">
                     <img src="images/shared/hojas.png" alt="Empresas" class="w-24 mb-6">
                     <h4 class="text-3xl font-bold mb-3 text-green-800">Soporte a Centros</h4>
                     <p class="text-emerald-400 max-w-md">Los centros de reciclaje tienen acceso a nuevas fuentes de materiales reciclables.</p>
                 </div>
-
                 <!-- Slide 3 -->
                 <div class="min-w-full flex flex-col items-center justify-center bg-opacity-80 rounded-xl p-10 shadow-xl">
                     <img src="https://cdn-icons-png.flaticon.com/512/3076/3076707.png" alt="Recolectores Particulares" class="w-24 mb-6">
                     <h4 class="text-3xl font-bold mb-3 text-green-800">Oportunidades para Recolectores</h4>
                     <p class="text-emerald-400 max-w-md">Recolectores independientes pueden ganar dinero recogiendo residuos cerca de ellos.</p>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
-
 
 <!-- Cómo Funciona -->
 <section id="como-funciona" class="py-24 bg-green-50">
     <div class="max-w-6xl mx-auto text-center px-6">
         <h3 class="text-4xl font-bold mb-16 animate__animated animate__fadeInDown">¿Cómo funciona Green Way?</h3>
         <div class="grid md:grid-cols-3 gap-10">
-
             <div class="flex flex-col items-center animate__animated animate__fadeInLeft">
                 <div class="w-24 h-24 bg-green-600 text-white flex items-center justify-center rounded-full text-3xl mb-6 shadow-lg">1</div>
                 <h4 class="text-2xl font-semibold mb-3">Publica Residuos</h4>
                 <p class="text-emerald-400">Empresas suben sus residuos detallando cantidad, tipo y ubicación.</p>
             </div>
-
             <div class="flex flex-col items-center animate__animated animate__fadeInUp">
                 <div class="w-24 h-24 bg-green-600 text-white flex items-center justify-center rounded-full text-3xl mb-6 shadow-lg">2</div>
                 <h4 class="text-2xl font-semibold mb-3">Conecta con Recolectores</h4>
                 <p class="text-emerald-400">Centros de reciclaje o recolectores independientes aceptan la solicitud.</p>
             </div>
-
             <div class="flex flex-col items-center animate__animated animate__fadeInRight">
                 <div class="w-24 h-24 bg-green-600 text-white flex items-center justify-center rounded-full text-3xl mb-6 shadow-lg">3</div>
                 <h4 class="text-2xl font-semibold mb-3">Impacta al Planeta</h4>
                 <p class="text-emerald-400">El material recolectado se recicla reduciendo la huella ecológica.</p>
             </div>
-
         </div>
     </div>
 </section>
@@ -168,13 +124,24 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-emerald-400 text-white py-8">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
-        <p>© 2025 Green Way. Todos los derechos reservados.</p>
-        <div class="space-x-6 mt-4 md:mt-0">
-            <a href="#" class="hover:text-green-300">Política de Privacidad</a>
-            <a href="#" class="hover:text-green-300">Términos de Servicio</a>
+<!-- Mapa -->
+<section id="mapa" class="py-24 bg-green-100">
+    <div class="max-w-7xl mx-auto text-center px-6">
+        <h3 class="text-4xl font-bold mb-6">Nuestra Ubicación</h3>
+        <div class="w-full h-[400px] rounded-xl overflow-hidden shadow-lg mb-6">
+            <!-- Mapa embebido -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.847759125435!2d-63.1631218!3d-17.7672654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjLCsDUwJzUyLjgiTiA3NMKwMDEnNTguNyJ9!5e0!3m2!1sen!2sus!4v1633787085845" width="100%"
+                height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
         </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-green-600 text-white py-12">
+    <div class="max-w-7xl mx-auto text-center px-6">
+        <p class="text-lg">&copy; 2025 Green Way. Todos los derechos reservados.</p>
+        <p class="text-md mt-4">Desarrollado por Equipo de Desarrollo.</p>
     </div>
 </footer>

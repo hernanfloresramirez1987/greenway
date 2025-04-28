@@ -27,9 +27,9 @@ export default class HomeComponent implements OnInit {
     let index = 0;
 
     setInterval(() => {
-      index = (index + 1) % 3; // Número de slides
+      index = (index + 1) % 4; // Número de slides
       carousel.style.transform = `translateX(-${index * 100}%)`;
-    }, 4000); // Cambia cada 4 segundos
+    }, 2000); // Cambia cada 4 segundos
   }
 
   carouselMiddle() {
@@ -37,8 +37,8 @@ export default class HomeComponent implements OnInit {
     let index = 0;
 
     setInterval(() => {
-      index = (index + 1) % 3; // Número de slides
+      index = (index + 1) % 4; // Número de slides
       carousel.style.transform = `translateX(-${index * 100}%)`;
-    }, 1000); // Cambia cada 4 segundos
+    }, 4000); // Cambia cada 1 segundo
   }
 }

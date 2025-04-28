@@ -21,6 +21,7 @@ export default class HomeComponent implements OnInit {
   mostSearched() {
     this.router.navigate(['/most-searched']);
   }
+  
   carouselBanner() {
     const carousel: any = document.getElementById('carousel');
     let index = 0;

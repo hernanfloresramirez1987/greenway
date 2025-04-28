@@ -39,6 +39,6 @@ export default class HomeComponent implements OnInit {
     setInterval(() => {
       index = (index + 1) % 3; // Número de slides
       carousel.style.transform = `translateX(-${index * 100}%)`;
-    }, 4000); // Cambia cada 4 segundos
+    }, 1000); // Cambia cada 4 segundos
   }
 }

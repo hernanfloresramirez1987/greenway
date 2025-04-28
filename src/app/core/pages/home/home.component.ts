@@ -6,12 +6,22 @@ import { Router } from '@angular/router';
   templateUrl: './home.component.html'
 })
 
-export default class HomeComponent {
+export default class HomeComponent implements OnInit {
   searchValue: String = '';
   suggestedCats: any = [];
   hidden: boolean = true;
 
-  constructor(private router: Router) {
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.carouselBanner();
+    this.carouselMiddle();
+  }
+
+  mostSearched() {
+    this.router.navigate(['/most-searched']);
+  }
+  carouselBanner() {
     const carousel: any = document.getElementById('carousel');
     let index = 0;
 
@@ -21,7 +31,13 @@ export default class HomeComponent {
     }, 4000); // Cambia cada 4 segundos
   }
 
-  mostSearched() {
-    this.router.navigate(['/most-searched']);
+  carouselMiddle() {
+    const carousel: any = document.getElementById('carouselmd');
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % 3; // Número de slides
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }, 4000); // Cambia cada 4 segundos
   }
 }

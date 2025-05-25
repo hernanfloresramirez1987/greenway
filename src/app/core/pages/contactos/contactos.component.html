@@ -9,7 +9,7 @@
            style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 1200px;">
         
         <!-- Card 1 -->
-        <div class="bg-gradient-to-r from-gray-700 via-white to-slate-900 rounded-xl shadow-lg p-4 text-center hover:shadow-xl transition-shadow duration-300 w-91 shadow-slate-950">
+        <div class="bg-gradient-to-r from-gray-700 via-white to-slate-900 rounded-xl shadow-lg p-4 text-center hover:shadow-xl transition-shadow duration-300 w-82 shadow-slate-950">
             <div class="border-4 border-white rounded-full inline-block p-1 bg-white">
               <img src="images/team/hernan_flores_ramirez.jpeg" alt="Hernán Flores" class="mx-auto w-32 h-32 rounded-full object-cover shadow-sm">
             </div>
@@ -27,7 +27,7 @@
     <div class="flex justify-center">
       <div class="grid gap-6 auto-rows-max"
            style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 1200px;">
-        <div class="bg-gradient-to-r from-gray-700 via-white to-slate-900 rounded-xl shadow-lg p-4 text-center hover:shadow-xl transition-shadow duration-300 w-82 shadow-slate-950">
+        <div class="bg-gradient-to-r from-gray-700 via-white to-slate-900 rounded-xl shadow-lg p-4 text-center hover:shadow-xl transition-shadow duration-300 w-82 shadow-slate-95">
             <div class="border-4 border-white rounded-full inline-block p-1 bg-white">
               <img src="images/team/diego_ruiz.jpeg" alt="Diego" class="mx-auto w-32 h-32 rounded-full object-cover shadow-sm">
             </div>
@@ -94,22 +94,21 @@
           
               <!-- Mapa -->
               <div class="h-[400px] w-full rounded-2xl overflow-hidden shadow-lg">
-                <ng-container *ngIf="userLocation; else noUbicacion">
-                  <google-map
-                    height="100%"
-                    width="100%"
-                    [center]="center"
+                @if(userLocation) {
+                    ENtro al mapa
+                    <google-map 
+                    height="100%" 
+                    width="100%" 
+                    [center]="center" 
                     [zoom]="zoom">
-                    <!-- <map-marker [position]="userLocation" [label]="'Tú'" title="Tu ubicación"></map-marker> -->
+                    <map-marker [position]="userLocation" [label]="'Tú'" title="Tu ubicación"></map-marker>
                     <map-marker [position]="destination" [label]="'Destino'" title="Mercado Mutualista"></map-marker>
                   </google-map>
-                </ng-container>
-                <ng-template #noUbicacion>
-                  <div class="text-center text-gray-600 mt-4">
-                    No pudimos obtener tu ubicación actual.
-                  </div>
-                </ng-template>
-              </div>
+                } @else {
+                    <div class="text-center text-gray-600 mt-4">
+                      No pudimos obtener tu ubicación actual.
+                    </div>
+                }
           
               <!-- Información de contacto -->
               <div class="text-gray-700 space-y-4">

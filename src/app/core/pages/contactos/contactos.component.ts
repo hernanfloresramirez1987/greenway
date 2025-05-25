@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HeaderComponent } from '../../components/header/header.component';
 import { RouterModule } from '@angular/router';
@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './contactos.component.html',
   styleUrl: './contactos.component.css'
 })
-export default class ContactosComponent {
+export default class ContactosComponent implements OnInit {
 
   userLocation: google.maps.LatLngLiteral | null = null;
   destination = { lat: -17.778136, lng: -63.196647 }; // Mercado Mutualista

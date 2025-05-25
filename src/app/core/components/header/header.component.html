@@ -8,12 +8,14 @@
             <!-- Título -->
             <h1 class="text-2xl font-bold animate__animated animate__fadeInLeft">Green Way</h1>
         </div>
-        <!-- <nav class="space-x-6 hidden md:block">
-            <a routerLink="/home" routerLinkActive="text-green-300" class="hover:text-green-300">Inicio</a>
-            <a routerLink="/services" routerLinkActive="text-green-300" class="hover:text-green-300">Servicios</a>
-            <a routerLink="/como-funciona" routerLinkActive="text-green-300" class="hover:text-green-300">Cómo Funciona</a>
-            <a routerLink="/contactos" routerLinkActive="text-green-300" class="hover:text-green-300">Contacto</a>
-        </nav> -->
+        @if (!isMenuOpen) {
+            <nav class="space-x-6 hidden md:block">
+                <a routerLink="/home" routerLinkActive="text-green-300" class="hover:text-green-300">Inicio</a>
+                <a routerLink="/services" routerLinkActive="text-green-300" class="hover:text-green-300">Servicios</a>
+                <a routerLink="/como-funciona" routerLinkActive="text-green-300" class="hover:text-green-300">Cómo Funciona</a>
+                <a routerLink="/contactos" routerLinkActive="text-green-300" class="hover:text-green-300">Contacto</a>
+            </nav>
+        }
         @if (isMenuOpen) {
             <nav class="md:hidden flex flex-col space-y-2 mt-4 text-center">
             <a routerLink="/home" class="hover:text-green-300">Inicio</a>

@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../components/header/header.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, HeaderComponent],
+  imports: [RouterModule, HeaderComponent, FooterComponent],
   selector: 'app-home',
   templateUrl: './home.component.html'
 })

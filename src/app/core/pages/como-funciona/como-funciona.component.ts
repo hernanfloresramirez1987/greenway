@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { trigger, style, transition, animate } from '@angular/animations';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../components/header/header.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-como-funciona',
   standalone: true,
-  imports: [RouterModule, HeaderComponent],
+  imports: [RouterModule, HeaderComponent, FooterComponent],
   templateUrl: './como-funciona.component.html',
   styleUrls: ['./como-funciona.component.css'],
   animations: [

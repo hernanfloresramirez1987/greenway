@@ -87,14 +87,15 @@
     
     
 
-        <div class="px-4 md:px-20 py-10 space-y-8">
+        <div class="px-4 md:px-0 py-10 space-y-8">
             <h1 class="text-3xl font-bold text-green-900">Contáctanos</h1>
           
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start w-full">
           
               <!-- Mapa -->
-              <div class="h-[400px] w-full rounded-2xl overflow-hidden shadow-lg">
+              <div class="h-[300px] w-full rounded-2xl overflow-hidden shadow-lg">
                 @if(userLocation) {
+                    <div class="text-center text-gray-600 mt-4 w-full">
                     ENtro al mapa
                     <google-map 
                     height="100%" 
@@ -104,14 +105,17 @@
                     <map-marker [position]="userLocation" [label]="'Tú'" title="Tu ubicación"></map-marker>
                     <map-marker [position]="destination" [label]="'Destino'" title="Mercado Mutualista"></map-marker>
                   </google-map>
+                  </div>
                 } @else {
                     <div class="text-center text-gray-600 mt-4">
                       No pudimos obtener tu ubicación actual.
                     </div>
                 }
+                </div>
+                
           
               <!-- Información de contacto -->
-              <div class="text-gray-700 space-y-4">
+              <div class="text-gray-700 space-y-4 w-full">
                 <h2 class="text-2xl font-semibold text-navy-800">Información de contacto</h2>
                 <ul class="space-y-2 text-base">
                   <li><strong>📞 Teléfono:</strong> +591 69616159</li>
@@ -126,3 +130,4 @@
     
     </div>
   </div>
+  <app-footer/>

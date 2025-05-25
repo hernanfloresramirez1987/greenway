@@ -1,0 +1,110 @@
+<div class="bg-green-50 text-gray-800" style="background-image: url('/images/banners/banner-services.png'); size: 100%; background-size: cover; background-position: center;">
+
+    <!-- Navbar -->
+    <header class="bg-lime-700 text-white shadow-md">
+      <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <div class="flex items-center space-x-2">
+          <img src="images/banners/3.png" alt="Logo Green Way" class="w-10 h-10" />
+          <h1 class="text-2xl font-bold">Green Way</h1>
+        </div>
+        <nav class="space-x-6 hidden md:block">
+          <a routerLink="/home" routerLinkActive="text-green-300" class="hover:text-green-300">Inicio</a>
+          <a routerLink="/services" routerLinkActive="text-green-300" class="hover:text-green-300">Servicios</a>
+          <a routerLink="/como-funciona" routerLinkActive="text-green-300" class="hover:text-green-300">Cómo Funciona</a>
+          <a href="#contacto" class="hover:text-green-300">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <!-- como-funciona.component.html -->
+    <section class="bg-gradient-to-b from-white to-gray-100 py-16 px-4 md:px-20">
+        <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">¿Cómo Funciona?</h2>
+    
+        <!-- Paso 1: Artesanos Auténticos -->
+        <div
+            class="flex flex-col md:flex-row items-center gap-8 mb-16 animate-fade-in-up"
+            [@fadeIn]>
+            <!-- src="/assets/artesano.jpg" -->
+            <img
+            src="/images/banners/como-funciona/img-artesano.png"
+            alt="Artesano trabajando"
+            class="w-full md:w-1/2 rounded-3xl shadow-lg"
+            />
+            <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold text-gray-700 mb-2">1. Artesanos Auténticos</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Seleccionamos cuidadosamente a nuestros artesanos locales. Cada uno de ellos crea piezas únicas, inspiradas en siglos de tradición.
+            </p>
+            <button
+                class="mt-4 px-6 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl shadow-md transition"
+                (click)="verPerfiles()">
+                Ver Perfiles
+            </button>
+            </div>
+        </div>
+    
+        <!-- Paso 2: Plataforma Interactiva -->
+        <div
+            class="flex flex-col-reverse md:flex-row items-center gap-8 mb-16 animate-fade-in-up"
+            [@fadeIn]>
+            <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold text-gray-700 mb-2">2. Plataforma Interactiva</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Carruseles dinámicos, filtros inteligentes y una experiencia envolvente desde el primer clic.
+            </p>
+            </div>
+            <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyVooYTM6RPnXUOkPrWLX8mY62cK3kiP_B8vk4UKvAeT084JVn7OVkQfgB-XXUPc9QoG0&usqp=CAU"
+            alt="Interfaz de la plataforma"
+            class="w-full md:w-1/2 rounded-3xl shadow-lg"
+            />
+        </div>
+    
+        <!-- Paso 3: Compra Segura -->
+        <div
+            class="flex flex-col md:flex-row items-center gap-8 mb-16 animate-fade-in-up"
+            [@fadeIn]>
+            <img
+            src="/assets/compra-segura.jpg"
+            alt="Compra segura"
+            class="w-full md:w-1/2 rounded-3xl shadow-lg"
+            />
+            <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold text-gray-700 mb-2">3. Compra Segura</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Con pagos cifrados y soporte 24/7, tu compra está protegida de principio a fin.
+            </p>
+            </div>
+        </div>
+    
+        <!-- Paso 4: Impacto Global -->
+        <div
+            class="flex flex-col-reverse md:flex-row items-center gap-8 animate-fade-in-up"
+            [@fadeIn]>
+            <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold text-gray-700 mb-2">4. Impacto Global</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Apoyas a familias, proteges culturas y formas parte de un comercio justo y sostenible.
+            </p>
+            </div>
+            <img
+            src="/assets/impacto-global.jpg"
+            alt="Impacto Global"
+            class="w-full md:w-1/2 rounded-3xl shadow-lg"
+            />
+        </div>
+    
+        <!-- Video o reel -->
+        <div class="mt-20 text-center">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">🎥 Mira cómo trabajamos</h3>
+            <iframe
+            class="w-full md:w-3/4 h-64 md:h-96 mx-auto rounded-2xl shadow-xl"
+            src="https://www.youtube.com/embed/samplevideo"
+            title="Video de artesanos"
+            frameborder="0"
+            allowfullscreen>
+            </iframe>
+        </div>
+        </div>
+    </section>
+</div>

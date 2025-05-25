@@ -3,5 +3,6 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     { path: '', pathMatch: 'full', redirectTo: 'home' },
     { path: 'home', loadComponent: () => import('./core/pages/home/home.component') },
-    { path: '**', loadComponent: () => import('./core/pages___/shared/error404/error404.component') }
+    { path: 'services', loadComponent: () => import('./core/pages/services/services.component') },
+    { path: 'como-funciona', loadComponent: () => import('./core/pages/como-funciona/como-funciona.component') }
 ];

@@ -1,0 +1,29 @@
+import { Component } from '@angular/core';
+import { trigger, style, transition, animate } from '@angular/animations';
+import { RouterModule } from '@angular/router';
+
+@Component({
+  selector: 'app-como-funciona',
+  standalone: true,
+  imports: [RouterModule],
+  templateUrl: './como-funciona.component.html',
+  styleUrls: ['./como-funciona.component.css'],
+  animations: [
+    trigger(
+      'fadeIn', [
+        transition(':enter', [
+          style({ opacity: 0, transform: 'translateY(40px)' }),
+          animate('700ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
+        ])
+      ]
+    )
+  ]
+})
+export default class ComoFuncionaComponent {
+
+
+  verPerfiles() {
+    console.log('Ver perfiles');
+  }
+
+}

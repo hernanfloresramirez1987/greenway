@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HeaderComponent } from '../../components/header/header.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contactos',
-  imports: [HeaderComponent, GoogleMapsModule],
+  imports: [RouterModule, HeaderComponent, GoogleMapsModule],
   templateUrl: './contactos.component.html',
   styleUrl: './contactos.component.css'
 })

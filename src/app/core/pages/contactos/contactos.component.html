@@ -14,7 +14,7 @@
               <img src="images/team/hernan_flores_ramirez.jpeg" alt="Hernán Flores" class="mx-auto w-32 h-32 rounded-full object-cover shadow-sm">
             </div>
             <h3 class="mt-3 font-bold text-lg drop-shadow text-slate-950">Ing. Hernán Flores Ramírez</h3>
-          <p class="text-sm text-slate-950">Desarrollador Principal</p>
+          <p class="text-sm text-slate-950">CEO & Main Developer</p>
         </div>
   
       </div>
@@ -95,9 +95,7 @@
               <!-- Mapa -->
               <div class="h-[300px] w-full rounded-2xl overflow-hidden shadow-lg">
                 @if(userLocation) {
-                    <div class="text-center text-gray-600 mt-4 w-full">
-                    ENtro al mapa
-                    <google-map 
+                  <google-map 
                     height="100%" 
                     width="100%" 
                     [center]="center" 
@@ -105,13 +103,12 @@
                     <map-marker [position]="userLocation" [label]="'Tú'" title="Tu ubicación"></map-marker>
                     <map-marker [position]="destination" [label]="'Destino'" title="Mercado Mutualista"></map-marker>
                   </google-map>
-                  </div>
                 } @else {
-                    <div class="text-center text-gray-600 mt-4">
-                      No pudimos obtener tu ubicación actual.
-                    </div>
+                  <div class="text-center text-gray-600 mt-4">
+                    No pudimos obtener tu ubicación actual.
+                  </div>
                 }
-                </div>
+              </div>
                 
           
               <!-- Información de contacto -->

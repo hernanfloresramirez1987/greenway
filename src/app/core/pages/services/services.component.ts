@@ -8,5 +8,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './services.component.css'
 })
 export default class ServicesComponent {
-
+  currentYear = new Date().getFullYear();
 }

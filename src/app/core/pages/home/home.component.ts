@@ -12,6 +12,7 @@ export default class HomeComponent implements OnInit {
   searchValue: String = '';
   suggestedCats: any = [];
   hidden: boolean = true;
+  currentYear = new Date().getFullYear();
 
   constructor(private router: Router) {}
 

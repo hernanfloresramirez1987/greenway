@@ -20,7 +20,7 @@ import { RouterModule } from '@angular/router';
   ]
 })
 export default class ComoFuncionaComponent {
-
+  currentYear = new Date().getFullYear();
 
   verPerfiles() {
     console.log('Ver perfiles');

@@ -1,0 +1,71 @@
+<div class="px-4 md:px-20 py-10 space-y-12">
+    <h1 class="text-3xl font-bold text-green-900">Contáctanos</h1>
+  
+    <!-- Mapa -->
+    <div class="w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
+      <!-- <google-map 
+        *ngIf="userLocation" 
+        height="100%" 
+        width="100%" 
+        [center]="center" 
+        [zoom]="zoom">
+        <map-marker [position]="userLocation" [label]="'Tú'" title="Tu ubicación"></map-marker>
+        <map-marker [position]="destination" [label]="'Destino'" title="Mercado Mutualista"></map-marker>
+      </google-map> -->
+      @if(userLocation) {
+        <google-map 
+        height="100%" 
+        width="100%" 
+        [center]="center" 
+        [zoom]="zoom">
+        <map-marker [position]="userLocation" [label]="'Tú'" title="Tu ubicación"></map-marker>
+        <map-marker [position]="destination" [label]="'Destino'" title="Mercado Mutualista"></map-marker>
+      </google-map>
+      } @else {
+        <div class="text-center text-gray-600 mt-4">
+          No pudimos obtener tu ubicación actual.
+        </div>
+      }
+    </div>
+  
+    <!-- Información de contacto -->
+    <div class="grid md:grid-cols-2 gap-8 text-gray-700">
+      <div>
+        <h2 class="text-xl font-semibold mb-2">Información de contacto</h2>
+        <ul class="space-y-2">
+          <li><strong>Teléfono:</strong> +591 69616159</li>
+          <li><strong>Email:</strong> hernanfloragreen&#64;gmail.com</li>
+          <li><strong>Dirección:</strong> Av. Principal, Potosí, Bolivia</li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Fotos del equipo -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4 text-green-800">Nuestro equipo</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Encargado 1 -->
+        <div class="bg-white rounded-xl shadow-md p-4 text-center">
+          <img src="assets/images/hernan.jpg" alt="Hernán Flores" class="mx-auto w-32 h-32 rounded-full object-cover">
+          <h3 class="mt-2 font-semibold text-lg">Ing. Hernán Flores Ramírez</h3>
+          <p class="text-sm text-gray-500">Desarrollador Principal</p>
+        </div>
+  
+        <!-- Encargado 2 -->
+        <div class="bg-white rounded-xl shadow-md p-4 text-center">
+          <img src="assets/images/silvia.jpg" alt="Silvia" class="mx-auto w-32 h-32 rounded-full object-cover">
+          <h3 class="mt-2 font-semibold text-lg">Silvia</h3>
+          <p class="text-sm text-gray-500">Gerente Comercial</p>
+        </div>
+  
+        <!-- Encargado 3 -->
+        <div class="bg-white rounded-xl shadow-md p-4 text-center">
+          <img src="assets/images/juan.jpg" alt="Juan Pérez" class="mx-auto w-32 h-32 rounded-full object-cover">
+          <h3 class="mt-2 font-semibold text-lg">Juan Pérez</h3>
+          <p class="text-sm text-gray-500">Soporte Técnico</p>
+        </div>
+  
+      </div>
+    </div>
+  </div>

@@ -8,7 +8,7 @@ import { JsonPipe } from '@angular/common';
 @Component({
   selector: 'app-contactos',
   standalone: true,
-  imports: [RouterModule, HeaderComponent, FooterComponent, GoogleMapsModule, JsonPipe],
+  imports: [RouterModule, HeaderComponent, FooterComponent, GoogleMapsModule],
   templateUrl: './contactos.component.html',
   styleUrl: './contactos.component.css'
 })

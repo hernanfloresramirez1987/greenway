@@ -10,18 +10,18 @@
         </div>
         @if (!isMenuOpen) {
             <nav class="space-x-6 hidden md:block">
-                <a routerLink="/home" routerLinkActive="text-green-300" class="hover:text-green-300">Inicio</a>
-                <a routerLink="/services" routerLinkActive="text-green-300" class="hover:text-green-300">Servicios</a>
-                <a routerLink="/como-funciona" routerLinkActive="text-green-300" class="hover:text-green-300">Cómo Funciona</a>
-                <a routerLink="/contactos" routerLinkActive="text-green-300" class="hover:text-green-300">Contacto</a>
+                <a routerLink="/v1/home" routerLinkActive="text-green-300" class="hover:text-green-300">Inicio</a>
+                <a routerLink="/v1/services" routerLinkActive="text-green-300" class="hover:text-green-300">Servicios</a>
+                <a routerLink="/v1/como-funciona" routerLinkActive="text-green-300" class="hover:text-green-300">Cómo Funciona</a>
+                <a routerLink="/v1/contactos" routerLinkActive="text-green-300" class="hover:text-green-300">Contacto</a>
             </nav>
         }
         @if (isMenuOpen) {
             <nav class="md:hidden flex flex-col space-y-2 mt-4 text-center">
-            <a routerLink="/home" class="hover:text-green-300">Inicio</a>
-            <a routerLink="/services" class="hover:text-green-300">Servicios</a>
-            <a routerLink="/como-funciona" class="hover:text-green-300">Cómo Funciona</a>
-            <a routerLink="/contactos" class="hover:text-green-300">Contacto</a>
+            <a routerLink="/v1/home" class="hover:text-green-300">Inicio</a>
+            <a routerLink="/v1/services" class="hover:text-green-300">Servicios</a>
+            <a routerLink="/v1/como-funciona" class="hover:text-green-300">Cómo Funciona</a>
+            <a routerLink="/v1/contactos" class="hover:text-green-300">Contacto</a>
           </nav>
         }
         <button class="md:hidden" (click)="toggleMenu()">

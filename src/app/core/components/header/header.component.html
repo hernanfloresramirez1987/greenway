@@ -8,40 +8,68 @@
             <!-- Título -->
             <h1 class="text-2xl font-bold animate__animated animate__fadeInLeft">Green Way</h1>
         </div>
-        <!-- Desktop Menu -->
-@if (!isMenuOpen) {
-<nav class="space-x-6 hidden md:flex items-center relative">
-    
-    <a routerLink="/v1/home" routerLinkActive="text-green-300" class="hover:text-green-300">Inicio</a>
-    <a routerLink="/v1/services" routerLinkActive="text-green-300" class="hover:text-green-300">Servicios</a>
-    <a routerLink="/v1/funcionalidades" routerLinkActive="text-green-300" class="hover:text-green-300">Funcionalidades</a>
-    <a routerLink="/v1/como-funciona" routerLinkActive="text-green-300" class="hover:text-green-300">Cómo Funciona</a>
-    <a routerLink="/v1/contactos" routerLinkActive="text-green-300" class="hover:text-green-300">Contacto</a>
+        @if (!isMenuOpen) {
+            <nav class="space-x-6 hidden md:block">
+                <a routerLink="/v1/home" routerLinkActive="text-green-300" class="hover:text-green-300">Inicio</a>
+                <a routerLink="/v1/services" routerLinkActive="text-green-300" class="hover:text-green-300">Servicios</a>
+                <a routerLink="/v1/funcionalidades" routerLinkActive="text-green-300" class="hover:text-green-300">Funcionalidades</a>
+                <a routerLink="/v1/como-funciona" routerLinkActive="text-green-300" class="hover:text-green-300">Cómo Funciona</a>
+                <a routerLink="/v1/contactos" routerLinkActive="text-green-300" class="hover:text-green-300">Contacto</a>
 
-    <!-- Submenu Plataforma -->
-    <div class="relative group">
-        <button class="hover:text-green-300 focus:outline-none">
-            Plataforma ▾
-        </button>
+                <!-- Submenu Plataforma -->
+                <div class="relative group">
+                    <button class="hover:text-green-300 focus:outline-none">
+                        Plataforma ▾
+                    </button>
 
-        <div class="absolute left-0 mt-2 w-64 bg-white text-gray-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-            <div class="flex flex-col p-3 space-y-2 text-sm">
+                    <div class="absolute left-0 mt-2 w-64 bg-white text-gray-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div class="flex flex-col p-3 space-y-2 text-sm">
 
-                <a routerLink="/material-disponible" class="hover:text-lime-600">Material Disponible</a>
-                <a routerLink="/material-necesario" class="hover:text-lime-600">Material Necesario</a>
-                <a routerLink="/mapa" class="hover:text-lime-600">Mapa</a>
-                <a routerLink="/registro" class="hover:text-lime-600">Registro</a>
-                <a routerLink="/puntos" class="hover:text-lime-600">Puntos Verdes</a>
-                <a routerLink="/ranking" class="hover:text-lime-600">Ranking</a>
-                <a routerLink="/academy" class="hover:text-lime-600">Green Way Academy</a>
-                <a routerLink="/bolsa-trabajo" class="hover:text-lime-600">Bolsa de Trabajo</a>
+                            <a routerLink="/material-disponible" class="hover:text-lime-600">Material Disponible</a>
+                            <a routerLink="/material-necesario" class="hover:text-lime-600">Material Necesario</a>
+                            <a routerLink="/mapa" class="hover:text-lime-600">Mapa</a>
+                            <a routerLink="/registro" class="hover:text-lime-600">Registro</a>
+                            <a routerLink="/puntos" class="hover:text-lime-600">Puntos Verdes</a>
+                            <a routerLink="/ranking" class="hover:text-lime-600">Ranking</a>
+                            <a routerLink="/academy" class="hover:text-lime-600">Green Way Academy</a>
+                            <a routerLink="/bolsa-trabajo" class="hover:text-lime-600">Bolsa de Trabajo</a>
 
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        }
+        @if (isMenuOpen) {
+            <nav class="md:hidden flex flex-col space-y-2 mt-4 text-center">
+            <a routerLink="/v1/home" class="hover:text-green-300">Inicio</a>
+            <a routerLink="/v1/services" class="hover:text-green-300">Servicios</a>
+            <a routerLink="/v1/funcionalidades" class="hover:text-green-300">Funcionalidades</a>
+            <a routerLink="/v1/como-funciona" class="hover:text-green-300">Cómo Funciona</a>
+            <a routerLink="/v1/contactos" class="hover:text-green-300">Contacto</a>
+
+            <!-- Submenu Plataforma -->
+            <div class="relative group">
+                <button class="hover:text-green-300 focus:outline-none">
+                    Plataforma ▾
+                </button>
+
+                <div class="absolute left-0 mt-2 w-64 bg-white text-gray-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="flex flex-col p-3 space-y-2 text-sm">
+
+                        <a routerLink="/material-disponible" class="hover:text-lime-600">Material Disponible</a>
+                        <a routerLink="/material-necesario" class="hover:text-lime-600">Material Necesario</a>
+                        <a routerLink="/mapa" class="hover:text-lime-600">Mapa</a>
+                        <a routerLink="/registro" class="hover:text-lime-600">Registro</a>
+                        <a routerLink="/puntos" class="hover:text-lime-600">Puntos Verdes</a>
+                        <a routerLink="/ranking" class="hover:text-lime-600">Ranking</a>
+                        <a routerLink="/academy" class="hover:text-lime-600">Green Way Academy</a>
+                        <a routerLink="/bolsa-trabajo" class="hover:text-lime-600">Bolsa de Trabajo</a>
+
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-
-</nav>
-}
+          </nav>
+        }
         <button class="md:hidden" (click)="toggleMenu()">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
